@@ -1,4 +1,4 @@
-package com.sqlite.demo;
+package com.sqlite.demo.sqlbdconfiguration;
 
 import java.sql.Types;
 

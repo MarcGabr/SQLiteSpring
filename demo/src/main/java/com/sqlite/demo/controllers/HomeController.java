@@ -1,4 +1,4 @@
-package com.sqlite.demo;
+package com.sqlite.demo.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +10,6 @@ public class HomeController{
     
     @GetMapping
     public String home() {
-        return "Hello World!";
+        return "Hello World!!!";
     }
 }

@@ -1,5 +1,6 @@
-package com.sqlite.demo;
+package com.sqlite.demo.models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,10 +12,10 @@ public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
- 
+    @Column(name="titulo", nullable=false)
     private String name;
  
-    private String message;
+    private float message;
  
     /**
      * @return the id
@@ -47,14 +48,14 @@ public class Person {
     /**
      * @return the message
      */
-    public String getMessage() {
+    public float getMessage() {
         return message;
     }
  
     /**
      * @param message the message to set
      */
-    public void setMessage(String message) {
+    public void setMessage(float message) {
         this.message = message;
     }
  
